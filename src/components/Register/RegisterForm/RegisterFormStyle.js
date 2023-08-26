@@ -23,7 +23,7 @@ export const RegisterFormContainer = styled.form`
 
     & .form_error {
         color: ${props => {return props.$primaryColor}};
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         margin-top: 10px;
     }
 

@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const LoginFormContainer = styled.form`
-    width: 100%;
+    width: 100vw;
     height: auto;
     max-width: 400px;
     border: 1px solid ${props => {return props.$tertiaryColor}};

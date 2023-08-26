@@ -2,8 +2,10 @@ import React from 'react'
 import Header from './components/Header/Header'
 import GlobalStyle from './GlobalStyle'
 import { useSelector } from 'react-redux'
-import Register from './components/Register/Register'
-import Login from './components/Login/Login'
+import Body from './components/Body/Body'
+import RegisterForm from './components/Register/RegisterForm/RegisterForm'
+import LoginForm from './components/Login/LoginForm/LoginForm'
+import { AnimatePresence } from 'framer-motion'
 
 
 const App = () => {
@@ -14,9 +16,10 @@ const App = () => {
     <>
       <GlobalStyle $primaryColor={primaryColor} $secondaryColor={secondaryColor}/>
       <Header></Header>
-      <main>
-        { isRegister ? <Register /> : <Login />}
-      </main>
+      <Body>
+        <RegisterForm />
+        <LoginForm />
+      </Body>
     </>
   )
 }

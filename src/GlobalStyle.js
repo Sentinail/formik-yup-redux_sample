@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
         margin: 0px;
         color: #FFFFFF;
         font-family: "Poppins", sans-serif;
+        transition: background-color 0.5s ease-in-out;
     }
 
     body {
